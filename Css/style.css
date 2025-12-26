@@ -1,0 +1,132 @@
+/* Configura￧￵es Globais */
+:root {
+    --primary-green: #2ecc71;
+    --dark-green: #27ae60;
+    --background-dark: #121212;
+    --card-bg: #1e1e1e;
+    --text-light: #e0e0e0;
+    --accent-blue: #3498db;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header e Wallet */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 { color: var(--primary-green); }
+
+#connectButton {
+    background-color: var(--accent-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#connectButton:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#walletAddress {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Container da Calculadora */
+.calculator-container, .history-container {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    border: 1px solid #444;
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btnCalculate {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+#btnSaveBlockchain {
+    background-color: #f39c12; /* Cor de alerta/ouro para blockchain */
+    color: white;
+    margin-top: 15px;
+    width: 100%;
+}
+
+#btnSaveBlockchain:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* ￁reas de Resultado e Hist￳rico */
+.hidden { display: none; }
+
+#resultArea {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #444;
+    text-align: center;
+}
+
+#co2Result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-green);
+}
+
+#tripHistory {
+    list-style: none;
+    padding: 0;
+}
+
+#tripHistory li {
+    background: #2a2a2a;
+    margin: 10px 0;
+    padding: 12px;
+    border-left: 4px solid var(--primary-green);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}

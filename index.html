@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrip - Calculadora de Carbono Web3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>EcoTrip: Simulador de Impacto Ambiental</h1>
+        <button id="connectButton">Conectar Carteira MetaMask</button>
+        <p id="walletAddress"></p>
+    </header>
+
+    <main>
+        <section class="calculator-container">
+            <h2>Calcule sua Viagem</h2>
+            <form id="tripForm">
+                <label for="routeSelect">Escolha sua rota:</label>
+                <select id="routeSelect">
+                    </select>
+
+                <button type="button" id="btnCalculate">Calcular Impacto</button>
+            </form>
+
+            <div id="resultArea" class="hidden">
+                <h3>Resultado:</h3>
+                <p id="co2Result">0 kg de CO2</p>
+
+                <button id="btnSaveBlockchain" disabled>
+                    Registrar Impacto na Blockchain
+                </button>
+            </div>
+        </section>
+
+        <section class="history-container">
+            <h2>Seu Hist￳rico Imut￡vel (Blockchain)</h2>
+            <ul id="tripHistory">
+            </ul>
+        </section>
+    </main>
+
+    <script src="js/routes-data.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/blockchain-conn.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+
+<script src="js/routes-data.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/blockchain-conn.js"></script>
+<script src="js/app.js"></script>
